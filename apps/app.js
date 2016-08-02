@@ -16,7 +16,7 @@ $(function() {
 
 function showResults(results) {
     $.each(results.items, function(index, item) {
-        $('#search-results').append("<iframe src=//www.youtube.com/embed/" + item.id.videoId + "></iframe>");
+        $('#search-results').append("<video src=//www.youtube.com/embed/" + item.id.videoId + "></video>");
     });
 
 }
