@@ -5,7 +5,8 @@ $(function() {
         var request = gapi.client.youtube.search.list({
             q: $('#query').val(),
             part: 'snippet',
-            type: "video"
+            type: "video",
+            maxResults: 20
         });
         request.execute(function(response) {
             var results = response.result;
